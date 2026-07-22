@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab Javed - Video Editor Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Tayyab Javed</div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn-primary">Let's Work</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <span class="hero-badge">7+ Years of Professional Video Editing</span>
+                <h1 class="hero-title">Engage Audiences with Stunning Videos</h1>
+                <p class="hero-subtitle">YouTube videos, short-form content, and SaaS animations. Let me help elevate your brand with professional video editing.</p>
+                
+                <!-- Tilted Images Gallery -->
+                <div class="hero-gallery">
+                    <div class="gallery-item tilt-1">
+                        <img src="assets/photo1" alt="Portfolio Work 1">
+                    </div>
+                    <div class="gallery-item tilt-2">
+                        <img src="assets/photo2" alt="Portfolio Work 2">
+                    </div>
+                    <div class="gallery-item tilt-3">
+                        <img src="assets/photo3" alt="Portfolio Work 3">
+                    </div>
+                    <div class="gallery-item tilt-4">
+                        <img src="assets/photo4" alt="Portfolio Work 4">
+                    </div>
+                    <div class="gallery-item tilt-5">
+                        <img src="assets/photo5" alt="Portfolio Work 5">
+                    </div>
+                    <div class="gallery-item tilt-6">
+                        <img src="assets/photo6" alt="Portfolio Work 6">
+                    </div>
+                </div>
+
+                <p class="hero-cta">Elevate your brand <span class="arrow">↗</span></p>
+                
+                <!-- Hero Action Buttons -->
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn-outline-light">Email Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Section -->
+        <section class="marquee-section">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span>★ YOUTUBE EXPERT ★ MOTION DESIGNER ★ AFTER EFFECTS ★ PREMIERE PRO ★ YOUTUBE EXPERT ★ MOTION DESIGNER ★ AFTER EFFECTS ★ PREMIERE PRO</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container">
+            <h1 class="section-title">Selected Work</h1>
+            <p class="section-subtitle">A selection of YouTube videos, short-form edits and animations.</p>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="long">YouTube Long Videos</button>
+                <button class="filter-btn" data-filter="short">Short Videos</button>
+                <button class="filter-btn" data-filter="saas">SaaS Animations</button>
+                <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+            </div>
+
+            <div class="grid" id="portfolio-grid">
+                <div class="card" data-category="long" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">YouTube Long Videos</span><img src="assets/tn1" alt="Portfolio work 1"><button class="play-button" type="button" aria-label="Play portfolio work 1"></button></div><div class="card-title">Tech Review Documentary</div>
+                </div>
+                <div class="card" data-category="long" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">YouTube Long Videos</span><img src="assets/tn2" alt="Portfolio work 2"><button class="play-button" type="button" aria-label="Play portfolio work 2"></button></div><div class="card-title">Business Growth Story</div>
+                </div>
+                <div class="card" data-category="long" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">YouTube Long Videos</span><img src="assets/tn3" alt="Portfolio work 3"><button class="play-button" type="button" aria-label="Play portfolio work 3"></button></div><div class="card-title">Travel Cinematic Vlog</div>
+                </div>
+                <div class="card" data-category="long" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">YouTube Long Videos</span><img src="assets/tn4" alt="Portfolio work 4"><button class="play-button" type="button" aria-label="Play portfolio work 4"></button></div><div class="card-title">Educational Series Episode</div>
+                </div>
+                <div class="card" data-category="long" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">YouTube Long Videos</span><img src="assets/tn5" alt="Portfolio work 5"><button class="play-button" type="button" aria-label="Play portfolio work 5"></button></div><div class="card-title">Product Launch Video</div>
+                </div>
+                <div class="card" data-category="long" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">YouTube Long Videos</span><img src="assets/tn6" alt="Portfolio work 6"><button class="play-button" type="button" aria-label="Play portfolio work 6"></button></div><div class="card-title">Interview Documentary</div>
+                </div>
+                <div class="card" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn7" alt="Portfolio work 7"><button class="play-button" type="button" aria-label="Play portfolio work 7"></button></div><div class="card-title">Quick Tips Reel</div>
+                </div>
+                <div class="card" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn8" alt="Portfolio work 8"><button class="play-button" type="button" aria-label="Play portfolio work 8"></button></div><div class="card-title">Product Showcase</div>
+                </div>
+                <div class="card" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn9" alt="Portfolio work 9"><button class="play-button" type="button" aria-label="Play portfolio work 9"></button></div><div class="card-title">Behind the Scenes</div>
+                </div>
+                <div class="card is-hidden" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn10" alt="Portfolio work 10"><button class="play-button" type="button" aria-label="Play portfolio work 10"></button></div><div class="card-title">Fast Tutorial</div>
+                </div>
+                <div class="card is-hidden" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn11" alt="Portfolio work 11"><button class="play-button" type="button" aria-label="Play portfolio work 11"></button></div><div class="card-title">Trending Moment</div>
+                </div>
+                <div class="card is-hidden" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn12" alt="Portfolio work 12"><button class="play-button" type="button" aria-label="Play portfolio work 12"></button></div><div class="card-title">Creative Process</div>
+                </div>
+                <div class="card is-hidden" data-category="saas" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">SaaS Animations</span><img src="assets/tn13" alt="Portfolio work 13"><button class="play-button" type="button" aria-label="Play portfolio work 13"></button></div><div class="card-title">App Launch Explainer</div>
+                </div>
+                <div class="card is-hidden" data-category="saas" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">SaaS Animations</span><img src="assets/tn14" alt="Portfolio work 14"><button class="play-button" type="button" aria-label="Play portfolio work 14"></button></div><div class="card-title">Feature Walkthrough</div>
+                </div>
+                <div class="card is-hidden" data-category="short" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Short Videos</span><img src="assets/tn15" alt="Portfolio work 15"><button class="play-button" type="button" aria-label="Play portfolio work 15"></button></div><div class="card-title">Dashboard Demo</div>
+                </div>
+                <div class="card is-hidden" data-category="saas" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">SaaS Animations</span><img src="assets/tn16" alt="Portfolio work 16"><button class="play-button" type="button" aria-label="Play portfolio work 16"></button></div><div class="card-title">Onboarding Flow</div>
+                </div>
+                <div class="card is-hidden" data-category="motion" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Motion Graphics</span><img src="assets/tn17" alt="Portfolio work 17"><button class="play-button" type="button" aria-label="Play portfolio work 17"></button></div><div class="card-title">Brand Identity Reveal</div>
+                </div>
+                <div class="card is-hidden" data-category="motion" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="card-img-wrapper"><span class="card-tag">Motion Graphics</span><img src="assets/tn18" alt="Portfolio work 18"><button class="play-button" type="button" aria-label="Play portfolio work 18"></button></div><div class="card-title">Abstract Visual Loop</div>
+                </div>
+            </div>
+
+            <button class="btn-outline load-more-btn" id="load-more" type="button">View More Work</button>
+        </section>
+
+        <!-- Portfolio Video Modal -->
+        <div class="video-modal" id="video-modal" aria-hidden="true">
+            <div class="video-modal-content" role="dialog" aria-modal="true" aria-label="Portfolio video player">
+                <button class="video-modal-close" id="video-modal-close" type="button" aria-label="Close video">×</button>
+                <iframe id="portfolio-video" title="Portfolio video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="assets/dp" alt="Tayyab Javed">
+                </div>
+                <div class="about-content">
+                    <h2>About Tayyab</h2>
+                    <p>I'm Tayyab Javed, a professional video editor based in Lahore, Pakistan, with 7+ years of
+                        experience. I edit YouTube long-form videos, short-form content, SaaS animations and motion
+                        graphics using Adobe Premiere Pro and After Effects. I also use AI tools when they help improve
+                        visuals or creative direction.</p>
+
+                    <div class="skills-grid">
+                        <div class="skill-tag">
+                            <div class="skill-dot"></div> 7+ Years Experience
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-dot"></div> Premiere Pro
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-dot"></div> After Effects
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-dot"></div> Lahore, Pakistan
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2>Let's Work Together</h2>
+            <p>Have a project? Send the details directly by email.</p>
+            <a href="mailto:monkeycut02@gmail.com" class="btn-primary email-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                monkeycut02@gmail.com
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div>© 2026 Tayyab Javed</div>
+            <div>YouTube & Professional Video Editor</div>
+        </div>
+    </footer>
+
+   
+
+    <!-- JavaScript Interactions -->
+    <script src="script.js"></script>
+</body>
+
+</html>
